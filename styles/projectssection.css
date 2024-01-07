@@ -1,0 +1,116 @@
+.div-projectssection {
+  background-color: #0D0E11;
+  display: flex;
+  justify-content: center;
+}
+
+.div-projectscontent {
+  background-color: #0D0E11;
+  flex: 1;
+  max-width: 1200px;
+  margin: 45px 3.125% 45px 3.125%;
+  border-bottom: 5px solid white;
+  padding-bottom: 45px;
+}
+
+.div-projectsname {
+  font-size: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-projects {
+  background-color: #0D0E11;
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 300px 675px;
+  row-gap: 90px;
+  justify-content: space-evenly;
+}
+
+.div-projectsexamples {
+  background-color: #0D0E11;
+  width: 290px;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
+  transition: 0.15s;
+  transition-timing-function: linear;
+  border: 5px solid white;
+}
+
+.div-projectsexamples:hover {
+  transform: scale(1.05);
+}
+
+.img-preview {
+  width: 290px;
+  height: 290px;
+}
+
+.div-projectsexamples p {
+  position: absolute;
+}
+
+.div-projectsexamplestext {
+  background-color: #0D0E11;
+  width: 665px;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
+  transition: 0.15s;
+  transition-timing-function: linear;
+  border: 5px solid white;
+}
+
+.div-projectsexamplestext:hover {
+  transform: scale(1.05);
+}
+
+.div-projectsexamplestext p {
+  margin: 45px;
+}
+
+
+
+@media (min-width: 784px) and (max-width: 1199px) {
+  .div-projectsname {
+    font-size: 96px;
+  }
+
+  .div-projects {
+    grid-template-columns: 300px 300px;
+    row-gap: 180px;
+  }
+
+  .div-projectsexamplestext {
+    width: 290px;
+  }
+}
+
+@media (max-width: 783px) {
+  .div-projectsname {
+    font-size: 48px;
+  }
+
+  .div-projects {
+    grid-template-columns: 300px;
+    row-gap: 45px;
+  }
+
+  .div-projectsexamplestext {
+    width: 290px;
+    margin-bottom: 135px;
+  }
+
+  #lastexample {
+    margin-bottom: 0px;
+  }
+}

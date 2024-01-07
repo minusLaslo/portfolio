@@ -1,0 +1,175 @@
+.div-aboutsection {
+  background-color: #0D0E11;
+  display: flex;
+  justify-content: center;
+}
+
+.div-aboutcontent {
+  background-color: #0D0E11;
+  flex: 1;
+  max-width: 1200px;
+  margin: 45px 3.125% 45px 3.125%;
+}
+
+.div-info {
+  display: grid;
+  grid-template-columns: 300px 490px;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+  
+.div-infoleft {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.15s;
+}
+
+.div-infoleft img {
+  height: 290px;
+  width: 290px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0px 0px 5px white;
+  transition: 0.15s;
+}
+
+.div-infoleft img:hover {
+  transform: scale(1.05);
+}
+
+.div-inforight {
+  display: flex;
+  align-items: center;
+  font-size: 192px;
+  height: 145px;
+  width: 490px;
+  justify-content: end;
+}
+
+.div-specifics {
+  background-color: #0D0E11;
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: space-evenly;
+  row-gap: 45px;
+}
+
+.div-specificscontent {
+  background-color: #0D0E11;
+  width: 290px;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
+  transition: 0.15s;
+  transition-timing-function: linear;
+  border: 5px solid white;
+}
+
+.div-specificscontent:hover {
+  transform: scale(1.05);
+}
+
+.div-contact {
+  background-color: #0D0E11;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid white;
+}
+
+.div-contactcontent {
+  background-color: #0D0E11;
+  height: 150px;
+  width: 87.5%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-contactcontent button {
+  font-size: 32px;
+  font-family: arial;
+  font-weight: bold;
+  color: #0D0E11;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px white;
+}
+
+.div-contactcontent button:hover {
+  font-size: 0px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  box-shadow: 0px 0px 5px red;
+}
+
+.div-contactcontent button:hover::after {
+  font-size: 32px;
+  content: "Copy e-mail!";
+}
+
+.div-contactcontent button:active {
+  background-color: rgb(127.5, 0, 0);
+  box-shadow: 0px 0px 5px rgb(127.5, 0, 0);
+}
+
+#input-email {
+  display: none;
+}
+
+
+
+@media (min-width: 784px) and (max-width: 1199px) {
+  .div-info {
+    grid-template-columns: 300px 330px;
+  }
+
+  .div-inforight {
+    font-size: 128px;
+    width: 330px;
+  }
+
+  .div-specifics {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media (max-width: 783px) {
+  .div-info {
+    grid-template-columns: 330px;
+    row-gap: 0px;
+    height: 420px;
+  }
+
+  .div-infoleft {
+    width: 330px;
+  }
+
+  .div-inforight {
+    justify-content: center;
+    font-size: 96px;
+    width: 330px;
+    height: 75px;
+    margin-top: 45px;
+  }
+
+  .div-specifics {
+    grid-template-columns: 300px;
+  }
+}

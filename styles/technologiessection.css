@@ -1,0 +1,170 @@
+.div-technologiessection {
+  background-color: #1B1E25;
+  display: flex;
+  justify-content: center;
+}
+
+.div-technologiescontent {
+  background-color: #1B1E25;
+  flex: 1;
+  max-width: 1200px;
+  margin: 45px 3.125% 45px 3.125%;
+}
+
+.div-technologiescontentupcoming {
+  background-color: #1B1E25;
+  flex: 1;
+  max-width: 1200px;
+  margin: 45px 3.125% 45px 3.125%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+.div-techologiesname {
+  font-size: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-skills {
+  background-color: #1B1E25;
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: space-evenly;
+  row-gap: 45px;
+}
+
+.div-skillscontent {
+  background-color: #0D0E11;
+  box-shadow: 0px 0px 5px #0D0E11;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.15s;
+  transition-timing-function: linear;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.div-skillscontent:hover {
+  transform: scale(1.05);
+}
+
+.div-skillsimg {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-github {
+  filter: brightness(0) invert(1);
+}
+
+.img-paintnet {
+  height: 150px;
+}
+
+.img-skeleton {
+  height: 150px;
+}
+
+.img-framework {
+  filter: brightness(0) invert(1);
+  height: 150px;
+}
+
+.div-skillstext {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.div-skillstextbeginner {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.div-skillscontent:hover .div-skillstextbeginner {
+  font-size: 0px;
+}
+
+.div-skillscontent:hover .div-skillstextbeginner::after {
+  font-size: 32px;
+  content: "Beginner";
+}
+
+.div-skillstextintermediate {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.div-skillscontent:hover .div-skillstextintermediate {
+  font-size: 0px;
+}
+
+.div-skillscontent:hover .div-skillstextintermediate::after {
+  font-size: 32px;
+  content: "Intermediate";
+}
+
+.div-skillstextadvanced {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.div-skillscontent:hover .div-skillstextadvanced {
+  font-size: 0px;
+}
+
+.div-skillscontent:hover .div-skillstextadvanced::after {
+  font-size: 32px;
+  content: "Advanced";
+}
+
+.div-skillstextexpert {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.div-skillscontent:hover .div-skillstextexpert {
+  font-size: 0px;
+}
+
+.div-skillscontent:hover .div-skillstextexpert::after {
+  font-size: 32px;
+  content: "Expert";
+}
+
+
+
+@media (min-width: 784px) and (max-width: 1199px) {
+  .div-techologiesname {
+    font-size: 96px;
+  }
+
+  .div-skills {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media (max-width: 783px) {
+  .div-techologiesname {
+    font-size: 48px;
+  }
+  .div-skills {
+    grid-template-columns: 300px;
+  }
+}

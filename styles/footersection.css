@@ -1,0 +1,48 @@
+.div-footersection {
+  background-color: black;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.div-footercontent {
+  background-color: black;
+  height: 90px;
+  width: 300px;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.div-footermail {
+  transition: 0.15s;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.div-footermail:hover {
+  transform: scale(1.05);
+}
+
+.img-footermail {
+  width: 90px;
+  height: 90px;
+}
+
+.div-footergithub {
+  filter: brightness(0) invert(1);
+  transition: 0.15s;
+  width: 90px;
+  height: 90px;
+}
+
+.div-footergithub:hover {
+  transform: scale(1.05);
+}
+
+.img-footergithub {
+  width: 90px;
+  height: 90px;
+}

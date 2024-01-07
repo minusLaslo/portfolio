@@ -1,0 +1,48 @@
+.div-typingsection {
+  background-color: #1B1E25;
+  display: flex;
+  justify-content: center;
+}
+
+.div-typingcontent {
+  background-color: #1B1E25;
+  flex: 1;
+  max-width: 1050px;
+  margin: 45px 3.125% 45px 3.125%;
+  border-bottom: 5px solid white;
+  padding-bottom: 45px;
+}
+
+.div-typingname {
+  font-size: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-typing {
+  background-color: #1B1E25;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.div-typing video {
+  width: 100%;
+}
+
+
+
+@media (min-width: 784px) and (max-width: 1199px) {
+  .div-typingname {
+    font-size: 96px;
+  }
+}
+
+@media (max-width: 783px) {
+  .div-typingname {
+    font-size: 48px;
+  }
+}

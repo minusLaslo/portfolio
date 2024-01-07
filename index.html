@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>minusLaslo</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/aboutsection.css">
+    <link rel="stylesheet" href="styles/technologiessection.css">
+    <link rel="stylesheet" href="styles/typingsection.css">
+    <link rel="stylesheet" href="styles/footersection.css">
+    <link rel="stylesheet" href="styles/projectssection.css">    
+  </head>
+
+  <body>
+    <section>
+      <div class="div-aboutsection">
+        <div class="div-aboutcontent">
+          <div class="div-info">
+            <div class="div-infoleft">
+              <img src="images/bg.jpg">
+            </div>
+            <div class="div-inforight">
+              Laslo
+            </div>
+          </div>
+          <div class="div-specifics">
+            <div class="div-specificscontent">
+              music
+            </div>
+            <div class="div-specificscontent">
+              german / english
+            </div>
+            <div class="div-specificscontent">
+              gaming
+            </div>
+          </div>
+          <div class="div-contact">
+            <div class="div-contactcontent">
+              <button onclick="copyemail()">Contact me now!</button>
+              <input type="text" value="minuslaslobusiness@gmail.com" id="input-email">
+              <script>
+                function copyemail() {
+                  // Get the text field
+                  var copyText = document.getElementById("input-email");
+
+                  // Select the text field
+                  copyText.select();
+                  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                  // Copy the text inside the text field
+                  navigator.clipboard.writeText(copyText.value);
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-technologiessection">
+        <div class="div-technologiescontent">
+          <div class="div-techologiesname">
+            Technologies
+          </div>
+          <div class="div-skills">
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+              </div>
+              <div class="div-skillstextbeginner">
+                HTML
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+              </div>
+              <div class="div-skillstextbeginner">
+                CSS
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+              </div>
+              <div class="div-skillstextbeginner">
+                C++
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+              </div>
+              <div class="div-skillstextbeginner">
+                PHP
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img class="img-github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+              </div>
+              <div class="div-skillstextintermediate">
+                GitHub
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img class="img-paintnet" src="images/paintnet.png" />
+              </div>
+              <div class="div-skillstextadvanced">
+                paint.net
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-technologiessection">
+        <div class="div-technologiescontentupcoming">
+          <div class="div-techologiesname">
+            Upcoming
+          </div>
+          <div class="div-skills">
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+              </div>
+              <div class="div-skillstext">
+                tailwindcss
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img class="img-skeleton" src="images/Skeleton.png" />
+              </div>
+              <div class="div-skillstext">
+                Skeleton
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+              </div>
+              <div class="div-skillstext">
+                git
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+              </div>
+              <div class="div-skillstext">
+                JavaScript
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img class="img-framework" src="images/white-question-mark.svg" />
+              </div>
+              <div class="div-skillstext">
+                JS Framework 
+              </div>
+            </div>
+            <div class="div-skillscontent">
+              <div class="div-skillsimg">
+                <img class="img-framework" src="images/white-question-mark.svg" />
+              </div>
+              <div class="div-skillstext">
+                Database
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-projectssection">
+        <div class="div-projectscontent">
+          <div class="div-projectsname">
+            Projects
+          </div>
+          <div class="div-projects">
+            <a target="_blank" href="https://github.com/minusLaslo/Zahlenkette">
+            <div class="div-projectsexamples">
+              <img class="img-preview" src="images/firstphpprogram.png">
+              <p>View</p>
+            </div>
+            </a>
+            <div class="div-projectsexamplestext">
+              <p>My first PHP program.</p>
+            </div>
+            <div class="div-projectsexamples">
+              <p>Upcoming</p>
+            </div>
+            <div class="div-projectsexamplestext">
+              Upcoming
+            </div>
+            <div class="div-projectsexamples">
+              <p>Upcoming</p>
+            </div>
+            <div class="div-projectsexamplestext" id="lastexample">
+              Upcoming
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-typingsection">
+        <div class="div-typingcontent">
+          <div class="div-typingname">
+            Typing
+          </div>
+          <div class="div-typing">
+            <video autoplay muted loop src="videos/typingfootage.mp4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="div-footersection">
+        <div class="div-footercontent">
+          <div class="div-footermail">
+            <img onclick="copyemail()" class="img-footermail" src="images/gmail-icon-free-png.webp">
+          </div>
+          <div class="div-footergithub">
+            <a target="_blank" href="https://github.com/minusLaslo">
+              <img class="img-footergithub" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
